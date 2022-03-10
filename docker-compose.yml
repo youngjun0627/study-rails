@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:10.19-alpine
+    environment:
+      - POSTGRES_DB='blog'
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "7432:5432"
